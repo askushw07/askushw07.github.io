@@ -1,0 +1,28 @@
+.footer {
+    background-color: #3b3a3a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #000; /* Change the color to your preferred hover color */
+  }
+  

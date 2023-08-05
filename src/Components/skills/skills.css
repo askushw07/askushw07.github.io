@@ -1,0 +1,63 @@
+/* Skill.css */
+
+.skills {
+    margin: 50px auto;
+    padding: 0 18%;
+  }
+  
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill-category {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px 15px 0 0 ;
+  }
+  
+  .skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .skills h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .skill-item p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .skills-wrapper {
+      justify-content: center;
+    }
+  
+    .skill-category {
+      flex-basis: 50%;
+    }
+  }
+  
