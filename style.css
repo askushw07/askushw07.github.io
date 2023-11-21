@@ -7,6 +7,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: #fafafa;
+  font-size: 16px;
 }
 
 header {
@@ -46,7 +47,7 @@ header {
 
 #home {
   padding-top: 6rem;
-  height: 120vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -118,10 +119,11 @@ header {
 
 #about {
   text-align: center;
+  padding: 0 5%;
 }
 #about > div {
   display: flex;
-  width: 85%;
+  width: 95%;
   margin: 3rem auto;
   gap: 5rem;
 }
@@ -129,7 +131,11 @@ header {
   width: 50%;
   text-align: start;
 }
+/* #about-me{
+  width: 60%;
+} */
 #skills {
+  /* width: 40%; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -408,6 +414,16 @@ footer > div {
 .btn:hover{
     background-color: #2c0d70;
 }
+.btn>a{
+  text-decoration: none;
+  color: #fff;
+}
+.react-activity-calendar{
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+}
 /* --------Responsive-------- Media Query--------- */
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -427,26 +443,11 @@ footer > div {
   #social {
     display: none;
   }
-  #home {
+  #home_img{
+    width: 40%;
+  }
+  #home_img>img{
     width: 100%;
-    padding-top: 15rem;
-    /* padding-bottom: 5; */
-    height: 180vh;
-  }
-
-  #main {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 5rem;
-    width: 85%;
-    height: 100%;
-    margin: 20rem auto;
-  }
-
-  #home_img {
-    height: fit-content;
-
-    margin: auto;
   }
   #user-detail {
     width: 100%;
@@ -459,12 +460,16 @@ footer > div {
     row-gap: 1rem;
     gap: 1rem;
   }
-}
-.react-activity-calendar{
-    width: fit-content;
+  .react-activity-calendar{
+    width: 90%;
     height: fit-content;
-    margin: auto;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
+
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 /* @media screen and (max-width: 991.98px) { body{
@@ -476,24 +481,29 @@ footer > div {
 @media screen and (max-width: 767.98px) {
   #home {
     width: 100%;
-    padding-top: 20rem;
+    padding-top: 15rem;
     /* padding-bottom: 5rem; */
-    height: 180vh;
+    height: 100%;
   }
   #main {
     display: flex;
     flex-direction: column-reverse;
     gap: 5rem;
     width: 90%;
-    height: 100%;
-    margin: 10rem auto;
+    height: 90%;
+    margin: 2rem auto;
+  }
+  #user-detail{
+    margin-top: -1rem;
   }
   #home_img {
-    width: 100%;
+    width: 40%;
+    min-height: 250px;
     margin: auto;
   }
   #home_img > img {
     width: 100%;
+    
   }
   #user-detail {
     font-size: 1rem;
@@ -506,11 +516,35 @@ footer > div {
   #about > div > div {
     width: 100%;
   }
+  #about-me{
+    margin-top: 3rem;
+  }
   #skills {
     width: 100%;
-    margin-left: -1rem;
+    margin: auto;
+  }
+  .fs_container,
+  .bs_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    gap: 2rem;
+    /* width: 100%; */
+  }
+  .react-activity-calendar{
+    width: 90%;
+    height: fit-content;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #projects{
+    width: 95%;
+    margin: 5rem auto 1rem;
   }
   .project-card {
+    margin-top: -1rem;
     display: flex !important;
     flex-direction: column !important;
     gap:3rem;
