@@ -423,6 +423,7 @@ footer > div {
   height: fit-content;
   margin: auto;
   display: flex;
+  flex-direction: column;
 }
 /* --------Responsive-------- Media Query--------- */
 
@@ -462,8 +463,8 @@ footer > div {
   }
   .react-activity-calendar{
     width: 90%;
-    height: fit-content;
-    margin: 3rem auto;
+    /* height: fit-content; */
+    margin: 3rem 5%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -533,11 +534,14 @@ footer > div {
   }
   .react-activity-calendar{
     width: 90%;
-    height: fit-content;
-    margin: 3rem auto;
+    /* height: fit-content; */
+    margin: 3rem 5%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+  .carousel-item{
+    width: 100%;
   }
   #projects{
     width: 95%;
