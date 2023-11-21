@@ -430,8 +430,8 @@ footer > div {
   #home {
     width: 100%;
     padding-top: 15rem;
-    padding-bottom: 5rem;
-    height: 120vh;
+    /* padding-bottom: 5; */
+    height: 180vh;
   }
 
   #main {
@@ -477,8 +477,8 @@ footer > div {
   #home {
     width: 100%;
     padding-top: 20rem;
-    padding-bottom: 5rem;
-    height: 125vh;
+    /* padding-bottom: 5rem; */
+    height: 180vh;
   }
   #main {
     display: flex;
