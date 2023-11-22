@@ -570,7 +570,7 @@ footer > div {
     padding: 4rem 0 6rem;
   }
   #contact-title > span:first-child {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #contact-form {
     padding: 1.6rem;
@@ -613,10 +613,29 @@ footer > div {
 
 @media screen and (max-width: 576px) { 
   #home{
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding-top: 12rem;
+    margin-bottom: 4rem;
     /* min-width: 200px; */
   }
   
   
+  
+ }
+
+ @media screen and (max-width: 200px) { 
+  header{
+    position: static;
+    top:0;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  #home{
+    height: 100vh;
+  }
+  #home_img {
+    width: 100px;
+    height: 200px;
+    margin: auto;
+  }
  }
