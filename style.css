@@ -8,15 +8,17 @@ body {
   width: 100%;
   background-color: #fafafa;
   font-size: 16px;
+  /* min-width: 300px; */
 }
 
 header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 5%;
   z-index: 1000;
+  top: 0;
 }
 .navbar-nav {
   width: 100%;
@@ -46,7 +48,7 @@ header {
 /* --------home---------- */
 
 #home {
-  padding-top: 6rem;
+  /* padding-top: 6rem; */
   height: 100vh;
   width: 100%;
 }
@@ -389,10 +391,10 @@ footer > div {
 }
 .fs_container,
 .bs_container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   row-gap: 2rem;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -420,7 +422,6 @@ footer > div {
 }
 .react-activity-calendar{
   width: 90%;
-  height: fit-content;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -434,6 +435,7 @@ footer > div {
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px) {
+
   .navbar-nav {
     align-items: end;
   }
@@ -456,11 +458,12 @@ footer > div {
   }
   .fs_container,
   .bs_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     row-gap: 1rem;
     gap: 1rem;
+    width: 100%;
   }
+
   .react-activity-calendar{
     width: 90%;
     /* height: fit-content; */
@@ -469,6 +472,12 @@ footer > div {
     flex-direction: column;
     gap: 2rem;
   }
+
+  #carouselExampleSlidesOnly img{
+    width: 70%;
+
+  }
+  
 }
 
 
@@ -482,9 +491,9 @@ footer > div {
 @media screen and (max-width: 767.98px) {
   #home {
     width: 100%;
-    padding-top: 15rem;
-    /* padding-bottom: 5rem; */
-    height: 100%;
+    height: 100vh;
+    padding-top: 6rem;
+    /* margin-top: 3rem; */
   }
   #main {
     display: flex;
@@ -492,19 +501,20 @@ footer > div {
     gap: 5rem;
     width: 90%;
     height: 90%;
-    margin: 2rem auto;
   }
   #user-detail{
     margin-top: -1rem;
   }
   #home_img {
     width: 40%;
-    min-height: 250px;
+    height: 250px;
+    min-width: 200px;
+    max-width: 300px;
     margin: auto;
   }
   #home_img > img {
     width: 100%;
-    
+    margin-bottom: -1rem;
   }
   #user-detail {
     font-size: 1rem;
@@ -526,11 +536,15 @@ footer > div {
   }
   .fs_container,
   .bs_container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     row-gap: 2rem;
     gap: 2rem;
-    /* width: 100%; */
+    width: 100%;
+    
+  }
+  #carouselExampleSlidesOnly img{
+    width: 90%;
+    margin: auto;
   }
   .react-activity-calendar{
     width: 90%;
@@ -540,9 +554,7 @@ footer > div {
     flex-direction: column;
     gap: 2rem;
   }
-  .carousel-item{
-    width: 100%;
-  }
+  
   #projects{
     width: 95%;
     margin: 5rem auto 1rem;
@@ -599,6 +611,12 @@ footer > div {
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 
-/* @media screen and (max-width: 576px) { body{
-    background-color: green;
-} } */
+@media screen and (max-width: 576px) { 
+  #home{
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    /* min-width: 200px; */
+  }
+  
+  
+ }
