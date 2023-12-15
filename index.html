@@ -368,11 +368,13 @@
                 </span>
             </h2>
             <div id="contact-form">
-                <form action="#" method="post">
+                <form 
+                action="https://submit-form.com/rDcEtx1z1"
+                method="POST">
                     <input type="hidden" name="form-name" value="form 1" />
                     <div>
                         <label for="name">Name</label>
-                        <input required placeholder="Enter Your Name" type="text" name="name" id="name" />
+                        <input required placeholder="Enter Your Name" type="text" name="name" id="name" minlength="3"/>
                     </div>
                     <div>
                         <label for="email">Email</label>
@@ -381,7 +383,7 @@
                     <div>
                         <label for="message">Message</label>
                         <textarea required cols="30" rows="8" placeholder="Enter Your Message" name="message"
-                            id="message"></textarea>
+                            id="message" minlength="30"></textarea>
                     </div>
                     <button type="submit">Submit</button>
                 </form>
